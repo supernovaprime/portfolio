@@ -44,7 +44,6 @@ server/.env.production.local
 *.sqlite
 *.sqlite3
 *.mongodb
-data/
 db/
 database/
 
