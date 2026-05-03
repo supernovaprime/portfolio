@@ -82,13 +82,13 @@ const Contact = () => {
     }
   }
 
-  const contactInfo =[
+  const contactInfo = [
     { icon: FaEnvelope, label: 'Secure Email', value: 'ebenezerayimful@gmail.com', href: 'mailto:ebenezerayimful@gmail.com' },
     { icon: FaPhone, label: 'Direct Comm', value: '+233 545976400', href: 'tel:+233545976400' },
     { icon: FaMapMarkerAlt, label: 'Physical Coordinates', value: 'Agona Swedru, Ghana', href: '#' },
   ]
 
-  const socialLinks =[
+  const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/supernovaprime', label: 'GitHub' },
     { icon: FaLinkedin, href: 'https://linkedin.com/in/yourprofile', label: 'LinkedIn' },
     { icon: FaTwitter, href: 'https://twitter.com/supernovaprime', label: 'Twitter' },
