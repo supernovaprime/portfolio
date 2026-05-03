@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Violet Ray - Primary Brand Colors */
+  --violet-50: #f5e5ff;
+  --violet-100: #ebccff;
+  --violet-200: #d699ff;
+  --violet-300: #c266ff;
+  --violet-400: #ad33ff;
+  --violet-500: #9900ff;
+  --violet-600: #7a00cc;
+  --violet-700: #5c0099;
+  --violet-800: #3d0066;
+  --violet-900: #1f0033;
+  --violet-950: #150024;
+  
+  /* Neutral Colors */
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+  
+  /* Semantic Colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--violet-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--violet-500);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes text-scramble {
+  0% { opacity: 0; transform: translateY(20px); }
+  50% { opacity: 0.5; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--violet-500), var(--violet-300));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animation classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Parallax effect */
+.parallax {
+  transform: translate3d(0, calc(var(--scroll-y) * 0.5px), 0);
+  will-change: transform;
+}
+
+/* 3D card effect */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.card-3d:hover {
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg);
+}
+
+/* Magnetic cursor effect */
+.magnetic {
+  transition: transform 0.2s ease-out;
+}
+
+/* Custom selection */
+::selection {
+  background: var(--violet-500);
+  color: white;
+}
+
+/* Focus styles */
+.focus-ring:focus {
+  outline: 2px solid var(--violet-500);
+  outline-offset: 2px;
+}
+
+/* Dark theme styles */
+.dark {
+  /* Dark theme neutral colors */
+  --neutral-50: #171717;
+  --neutral-100: #262626;
+  --neutral-200: #404040;
+  --neutral-300: #525252;
+  --neutral-400: #737373;
+  --neutral-500: #a3a3a3;
+  --neutral-600: #d4d4d4;
+  --neutral-700: #e5e5e5;
+  --neutral-800: #f5f5f5;
+  --neutral-900: #fafafa;
+}
+
+/* Dark theme scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: var(--neutral-900);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--violet-600);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--violet-500);
+}
+
+/* Dark theme glassmorphism */
+.dark .glass {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

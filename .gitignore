@@ -1,0 +1,336 @@
+# Portfolio Project .gitignore - Comprehensive Version
+# Generated for Next.js + Express.js + MongoDB + Email System
+
+# ===========================================
+# DEPENDENCIES
+# ===========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===========================================
+# NEXT.JS SPECIFIC
+# ===========================================
+.next/
+out/
+build/
+dist/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# ===========================================
+# ENVIRONMENT FILES (CRITICAL - NEVER COMMIT)
+# ===========================================
+,env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+server/.env
+server/.env.local
+server/.env.development.local
+server/.env.test.local
+server/.env.production.local
+
+# ===========================================
+# DATABASE FILES
+# ===========================================
+*.db
+*.sqlite
+*.sqlite3
+*.mongodb
+data/
+db/
+database/
+
+# ===========================================
+# LOG FILES
+# ===========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+server/logs/
+*.log.*
+
+# ===========================================
+# TEMPORARY FILES
+# ===========================================
+temp/
+tmp/
+*.tmp
+*.temp
+temp_hero.txt
+*.temp.*
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===========================================
+# TEST FILES (Development Only)
+# ===========================================
+test/
+tests/
+__tests__/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+coverage/
+.nyc_output/
+jest/
+server/test-*.js
+server/*test*.js
+server/*test*.ps1
+server/run-test.bat
+server/check-env.js
+server/comprehensive-email-test.js
+server/email-test.js
+server/final-email-test.js
+server/minimal-test.js
+server/simple-email-test.js
+server/standalone-email-test.js
+server/test-email.js
+server/test-email.ps1
+server/test-server.js
+
+# ===========================================
+# IDE AND EDITOR FILES
+# ===========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/*.code-snippets
+
+# ===========================================
+# LOCAL CONFIGURATION FILES
+# ===========================================
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+config/local.js
+config/local.json
+config/local.yml
+config/local.yaml
+
+# ===========================================
+# BUILD ARTIFACTS
+# ===========================================
+build/
+dist/
+out/
+.target/
+*.tgz
+*.tar.gz
+
+# ===========================================
+# RUNTIME DATA
+# ===========================================
+pids
+*.pid
+*.seed
+*.pid.lock
+.lock-wscript
+
+# ===========================================
+# COVERAGE DIRECTORY
+# ===========================================
+coverage/
+*.lcov
+.nyc_output/
+
+# ===========================================
+# OPTIONAL NPM CACHE DIRECTORY
+# ===========================================
+.npm
+
+# ===========================================
+# OPTIONAL ESLINT CACHE
+# ===========================================
+.eslintcache
+
+# ===========================================
+# OPTIONAL REPL HISTORY
+# ===========================================
+.node_repl_history
+
+# ===========================================
+# OUTPUT OF 'NPM PACK'
+# ===========================================
+*.tgz
+
+# ===========================================
+# YARN INTEGRITY FILE
+# ===========================================
+.yarn-integrity
+
+# ===========================================
+# PARCEL-BUNDLER CACHE
+# ===========================================
+.cache
+.parcel-cache
+
+# ===========================================
+# STORYBOOK BUILD OUTPUTS
+# ===========================================
+.out
+.storybook-out
+
+# ===========================================
+# SERVER SPECIFIC
+# ===========================================
+server/node_modules/
+server/logs/
+server/uploads/
+server/.env*
+server/tmp/
+server/temp/
+
+# ===========================================
+# MICROSOFT WINDOWS
+# ===========================================
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# ===========================================
+# LINUX
+# ===========================================
+*~
+
+# ===========================================
+# MACOS
+# ===========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ===========================================
+# DEVELOPMENT SPECIFIC
+# ===========================================
+.env.local
+.env.development
+.env.test
+.env.staging
+.env.production
+*.local
+config/local.*
+secrets/
+private/
+confidential/
+
+# ===========================================
+# UPLOADS AND USER CONTENT
+# ===========================================
+uploads/
+user-uploads/
+media/
+static/uploads/
+public/uploads/
+server/uploads/
+
+# ===========================================
+# CACHE DIRECTORIES
+# ===========================================
+.cache/
+.parcel-cache/
+.next/cache/
+.cache-loader/
+
+# ===========================================
+# BACKUP FILES
+# ===========================================
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*.tmp
+*.temp
+
+# ===========================================
+# DEBUG FILES
+# ===========================================
+debug.log
+error.log
+access.log
+server.log
+app.log
+
+# ===========================================
+# SECURITY AND SENSITIVE FILES
+# ===========================================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+private/
+credentials/
+auth/
+certificates/
+ssl/
+
+# ===========================================
+# PERFORMANCE PROFILES
+# ===========================================
+*.cpuprofile
+*.heapdump
+*.prof
+
+# ===========================================
+# CUSTOM PROJECT SPECIFIC
+# ===========================================
+# Add any project-specific files that shouldn't be committed
+# For example:
+# local-config.js
+# development-config.json
+# production-secrets.env
+
+# ===========================================
+# END OF GITIGNORE
+# ===========================================
