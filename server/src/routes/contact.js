@@ -227,18 +227,12 @@ router.post('/', [
     let transporterUsed = 'none';
 
     try {
-      // First verify email configuration and get appropriate transporter
-      const emailConfig = await verifyEmailConfig();
-      if (!emailConfig.success) {
-        throw new Error('Email configuration is invalid');
-      }
-
-      // Use the appropriate transporter based on verification result
-      const transporter = emailConfig.transporter === 'fallback' 
-        ? createFallbackTransporter() 
-        : createTransporter();
+      // Skip email verification due to Railway network restrictions
+      // Use primary transporter directly
+      const transporter = createTransporter();
+      console.log('📧 Using primary transporter (verification skipped due to Railway network restrictions)');
       
-      transporterUsed = emailConfig.transporter;
+      transporterUsed = 'primary';
       console.log(`📧 Using ${transporterUsed} transporter for sending email`);
       
       const mailOptions = {
